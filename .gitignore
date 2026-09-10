@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Local / scratch (kept OUT of the repo on purpose)
+qa/verify/
+qa/smoke/work/
+.DS_Store
+
+# NOTE: ocr/pages, ocr/raw, ocr/verified, content/, book/, pdf/ ARE committed.
+# GitHub is the project's output store. If the repo grows past ~200 MB,
+# migrate ocr/pages to Git LFS (see docs/pipeline.md §10).

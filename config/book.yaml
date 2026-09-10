@@ -1,0 +1,28 @@
+# Book metadata — filled by scripts/01_register_source.py (source block)
+# and by the source analysis stage (chapters block).
+book:
+  title: ""
+  title_en: ""
+  author: ""
+  publisher: ""
+  language: fa
+  source_pdf: ""      # set by 01_register_source
+  sha256: ""
+  registered_at: ""
+
+pages:
+  total: 0
+  dpi: 180            # rasterization DPI for page images
+  jpeg_quality: 82
+
+pipeline:
+  chunk_size: 10      # pages processed per chunk (memory protocol)
+  ocr_mode: vision    # vision = agent reads page images (primary in this sandbox)
+  crosscheck:
+    enabled: true     # mechanical PP-OCRv4 pass for Latin/numeric tokens
+    min_conf: 0.60
+    latin_only: true
+
+# Chapter map — filled during source analysis (stage 2), one entry per chapter:
+#   - { id: ch01, title: "...", start_page: 1, end_page: 20 }
+chapters: []

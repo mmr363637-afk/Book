@@ -1,0 +1,46 @@
+# Design tokens — consumed by the PDF renderer (scripts/09_build_pdf.py)
+# and mirrored in book/css/book.css for the browser view.
+page:
+  size: A4            # 595 x 842 pt
+  margin_top: 62      # leaves room for running header
+  margin_bottom: 56
+  margin_outer: 50    # right side (RTL outer edge)
+  margin_inner: 42    # left side (gutter)
+
+fonts:
+  family: Vazirmatn
+  directory: book/fonts
+  body_size: 10.5
+  body_leading: 17.5
+  h1_size: 20
+  h2_size: 14.5
+  h3_size: 12
+  table_size: 9.5
+  caption_size: 9
+  header_size: 8.5
+  page_number_size: 9
+
+colors:
+  ink: "1a2733"          # main text
+  soft_ink: "4a5a6a"     # secondary text
+  primary: "0e6e6a"      # deep teal — headings, rules
+  primary_soft: "e7f2f1" # light teal background
+  highyield_bg: "fff6df"
+  highyield_border: "e3a92c"
+  callout_bg: "eaf1fb"
+  callout_border: "3f6fb5"
+  warning_bg: "fdeeec"
+  warning_border: "c04a3a"
+  table_head_bg: "0e6e6a"
+  table_head_fg: "ffffff"
+  table_alt_bg: "f4f8f8"
+  grid: "c9d6d8"
+  question_bg: "f7f9fa"
+  question_border: "9db4b8"
+  answer_bg: "e7f2f1"
+  answer_border: "0e6e6a"
+  rule: "d8e2e3"
+
+boxes:
+  radius: 6
+  padding: 10
