@@ -1,0 +1,107 @@
+# Run Log
+
+- `2026-09-09 23:57 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 235505fa51f9800c…
+- `2026-09-09 23:58 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:58 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:58 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:58 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:58 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:58 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:58 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 a48bb92782a0a0e4…
+- `2026-09-09 23:58 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:58 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:58 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:58 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:58 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:58 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:58 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 867e14dd3268942b…
+- `2026-09-09 23:58 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:59 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:59 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:59 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:59 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:59 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:59 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 6dfed5d67fdf8434…
+- `2026-09-09 23:59 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:59 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:59 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:59 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:59 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:59 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:59 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 96667fc979392e15…
+- `2026-09-09 23:59 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:59 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:59 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:59 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:59 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:59 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:59 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 a41dc859d18bc65e…
+- `2026-09-09 23:59 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-09 23:59 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-09 23:59 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-09 23:59 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-09 23:59 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-09 23:59 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-09 23:59 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 d31216fbfd800d27…
+- `2026-09-10 00:00 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:00 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:00 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:00 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:00 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:00 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:00 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 794d3dbc58fcd074…
+- `2026-09-10 00:00 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:00 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:00 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:00 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:00 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:00 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:00 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:00 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 afeaf07d07b72a8c…
+- `2026-09-10 00:00 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:00 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:00 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:00 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:00 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:00 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:00 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:00 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 339639062dd6ca05…
+- `2026-09-10 00:00 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:00 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:00 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:00 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:00 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:00 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:00 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:01 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 0bc3cc504a6c16e4…
+- `2026-09-10 00:01 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:01 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:01 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:01 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:01 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:01 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:01 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:03 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 d623603d20fbc589…
+- `2026-09-10 00:03 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:03 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:03 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:03 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:03 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:03 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:03 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:06 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 5ab3afa67422dbb8…
+- `2026-09-10 00:06 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:06 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:06 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:06 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:06 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:06 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:06 UTC` **09_build_pdf** — built smoke.pdf: 2 pages
+- `2026-09-10 00:07 UTC` **01_register** — registered smoke_fixture.pdf: 2 pages, size 595.3x841.9pt, sha256 917ca7bf2a53a227…
+- `2026-09-10 00:07 UTC` **03_rasterize** — rasterized 2 new pages @ 180dpi (chunks: 1-2)
+- `2026-09-10 00:07 UTC` **04_ocr_raw** — chunk 1-2 prepared; 60 mechanical Latin tokens collected for crosscheck; agent must now write raw drafts from page images
+- `2026-09-10 00:07 UTC` **06_verify_report** — chunk 1-2: 2 verified, 0 missing verified text
+- `2026-09-10 00:07 UTC` **07_structure** — FAILED with 1 errors
+- `2026-09-10 00:07 UTC` **07_structure** — OK: 1 chapters, 1 topics, 1 questions, 1 recall, 0 tables, 0 figures
+- `2026-09-10 00:07 UTC` **08_render_html** — rendered index + 1 chapters, 1 topics
+- `2026-09-10 00:07 UTC` **09_build_pdf** — built smoke.pdf: 3 pages

@@ -1,0 +1,294 @@
+/* ============================================================
+   Medical Book — reconstructed edition (browser + print styles)
+   Mirrors config/render.yaml design tokens.
+   The PDF (stage 09) is rendered from the same HTML document.
+   ============================================================ */
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-Medium.ttf") format("truetype"); font-weight: 500; }
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-SemiBold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-Bold.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Vazirmatn"; src: url("../fonts/Vazirmatn-ExtraBold.ttf") format("truetype"); font-weight: 800; }
+
+:root {
+  --ink: #1a2733;
+  --soft-ink: #4a5a6a;
+  --primary: #0e6e6a;
+  --primary-soft: #e7f2f1;
+  --amber: #e3a92c;
+  --amber-bg: #fff6df;
+  --blue: #3f6fb5;
+  --blue-bg: #eaf1fb;
+  --red: #c04a3a;
+  --red-bg: #fdeeec;
+  --rule: #d8e2e3;
+  --grid: #c9d6d8;
+  --card-bg: #f7f9fa;
+  --card-border: #9db4b8;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  background: #eef1f2;
+  color: var(--ink);
+  font-family: "Vazirmatn", "Vazirmatn Fallback", "Noto Naskh Arabic", Tahoma, sans-serif;
+  line-height: 1.95;
+  font-size: 1rem;
+}
+
+.page, .chapter, article.chapter {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2.2rem 1.6rem 4rem;
+  background: #fff;
+}
+
+/* ---------------- cover & TOC ---------------- */
+.cover {
+  background: var(--primary);
+  color: #fff;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid var(--amber);
+}
+.cover-inner { text-align: center; padding: 3rem 1.5rem; }
+.cover-kicker {
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  color: #cfe4e2;
+  margin-bottom: 1.6rem;
+}
+.cover-title { font-size: 2.6rem; line-height: 1.5; margin: 0 0 .6rem; }
+.cover-title-en { font-size: 1.15rem; color: #d8e8e7; }
+.cover-author { margin-top: 1rem; color: #d8e8e7; }
+.cover-meta { margin-top: 3rem; font-size: .85rem; color: #b8d2d0; }
+
+.toc { padding: 3rem 1.6rem 5rem; }
+.toc h1 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: .5rem;
+}
+.toc ol { list-style: none; counter-reset: ch; padding: 0; }
+.toc li { counter-increment: ch; margin: .35rem 0; }
+.toc li::marker { content: none; }
+.toc .toc-chapter > a {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.toc .toc-chapter > a::before { content: "٠ "; color: var(--primary); font-weight: 800; }
+.toc ul { margin: .3rem 0 .6rem 1.2rem; color: var(--soft-ink); font-size: .92rem; }
+.toc ul a { color: var(--soft-ink); text-decoration: none; }
+.toc ul a:hover { color: var(--primary); }
+
+/* ---------------- chapter ---------------- */
+.chapter-head { text-align: center; margin-bottom: 2.4rem; }
+.chapter-head h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin: .4rem 0 .2rem;
+  line-height: 1.5;
+}
+.chapter-sub { color: var(--soft-ink); font-size: 1rem; }
+.chapter-head::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: var(--amber);
+  margin: 1.1rem auto 0;
+  border-radius: 2px;
+}
+
+/* ---------------- topic ---------------- */
+.topic { margin: 2.6rem 0; }
+.topic-title {
+  color: var(--primary);
+  font-size: 1.4rem;
+  border-right: 5px solid var(--primary);
+  padding-right: .7rem;
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.lesson-section { margin: 1.4rem 0; }
+.lesson-section h3 {
+  color: var(--primary);
+  font-size: 1.06rem;
+  border-top: 1px solid var(--rule);
+  padding-top: .55rem;
+  margin: 0 0 .5rem;
+}
+
+p { margin: .55rem 0; }
+ul.bullets { margin: .5rem 0 .8rem; padding-right: 1.4rem; }
+ul.bullets li { margin: .25rem 0; }
+
+/* ---------------- tables ---------------- */
+figure.table-fig { margin: 1.1rem 0; }
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+  direction: rtl;
+}
+.data-table th {
+  background: var(--primary);
+  color: #fff;
+  padding: .45rem .6rem;
+  text-align: right;
+  font-weight: 600;
+}
+.data-table td {
+  padding: .4rem .6rem;
+  border: 1px solid var(--grid);
+  vertical-align: top;
+  text-align: right;
+}
+.data-table tbody tr:nth-child(even) { background: #f4f8f8; }
+figcaption {
+  font-size: .82rem;
+  color: var(--soft-ink);
+  text-align: center;
+  margin-top: .4rem;
+}
+
+/* ---------------- figures ---------------- */
+figure.img-fig { margin: 1.2rem 0; text-align: center; }
+figure.img-fig img {
+  max-width: 86%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+
+/* ---------------- boxes ---------------- */
+.highyield {
+  background: var(--amber-bg);
+  border: 1px solid var(--amber);
+  border-right: 5px solid var(--amber);
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  margin: 1rem 0;
+}
+.highyield .box-label {
+  display: block;
+  color: #a87614;
+  font-weight: 700;
+  font-size: .85rem;
+  margin-bottom: .3rem;
+}
+.callout {
+  background: var(--blue-bg);
+  border: 1px solid var(--blue);
+  border-right: 5px solid var(--blue);
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  margin: 1rem 0;
+}
+.callout.warning {
+  background: var(--red-bg);
+  border-color: var(--red);
+}
+
+/* ---------------- follow up / recall / tests ---------------- */
+.followup { margin: 1.6rem 0; }
+.fu-title {
+  color: var(--primary);
+  font-size: 1.15rem;
+  background: var(--primary-soft);
+  padding: .5rem .9rem;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+.followup > *:not(h2) { padding-right: .9rem; }
+
+.recall { margin: 1.6rem 0; }
+.recall-title { color: var(--primary); font-size: 1.15rem; }
+.recall-list { padding-right: 1.2rem; }
+.recall-list li { margin: .5rem 0; }
+.recall-list .rq { font-weight: 600; }
+.recall-list .ra {
+  display: block;
+  color: #5a6a76;
+  font-size: .9rem;
+}
+
+.tests { margin: 1.8rem 0; }
+.tests-title { color: var(--primary); font-size: 1.15rem; }
+
+article.question {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin: 1rem 0;
+}
+.q-head { display: flex; justify-content: flex-end; }
+.q-num {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.stem { font-weight: 600; margin: .4rem 0 .6rem; }
+ol.options { list-style: none; padding: 0; margin: .4rem 0 .8rem; }
+ol.options li { margin: .3rem 0; padding-right: 1.1rem; text-indent: -1.1rem; }
+ol.options li::before { content: attr(data-opt) ".\00a0"; font-weight: 700; color: #4a5a6a; }
+ol.options li.correct::before { color: var(--primary); }
+.answer-key {
+  background: var(--primary-soft);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  padding: .35rem .8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.explanation {
+  margin-top: .6rem;
+  font-size: .92rem;
+  color: #33424f;
+  border-right: 3px solid var(--rule);
+  padding-right: .7rem;
+}
+.key-notes { margin-top: .4rem; font-size: .85rem; color: #6a7a86; }
+
+.topic-pages {
+  margin-top: 1.4rem;
+  font-size: .78rem;
+  color: #8a98a3;
+  text-align: left;
+}
+
+/* ---------------- print (A4) ---------------- */
+@page {
+  size: A4;
+  margin: 22mm 18mm 20mm 16mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 9pt;
+    color: #5a6a76;
+  }
+}
+@page :first { @bottom-center { content: none; } }
+
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  .page, .chapter, article.chapter { max-width: none; padding: 0; }
+  .cover { min-height: 257mm; page-break-after: always; }
+  .chapter { page-break-before: always; }
+  .topic-title, h3 { page-break-after: avoid; }
+  article.question, .highyield, .callout, figure { page-break-inside: avoid; }
+  table.data-table { page-break-inside: auto; }
+  .data-table tr { page-break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}

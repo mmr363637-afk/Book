@@ -1,0 +1,15 @@
+# Medical Book Reconstruction & Publishing Pipeline — Python stack
+# Install:  pip3 install --break-system-packages -r requirements.txt
+#
+# Sandbox note: this environment has no apt and a restricted network
+# (pypi.org + github.com only). All packages are pure wheels or PyPI wheels.
+PyMuPDF>=1.24
+reportlab>=4.0
+arabic_reshaper>=3.0
+python-bidi>=0.4.2
+PyYAML>=6.0
+Pillow>=10.0
+numpy
+opencv-python-headless>=4.9
+onnxruntime>=1.17
+rapidocr_onnxruntime>=1.3
