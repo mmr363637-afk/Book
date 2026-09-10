@@ -1,0 +1,48 @@
+name: 📚 Download QB Surgery PDF
+
+on:
+  push:
+    branches: [ "arena/01a088aa-book" ]
+    paths:
+      - '.github/workflows/download-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/01a088aa-book
+          fetch-depth: 0
+
+      - name: Try download PDF from admlink
+        run: |
+          set -e
+          mkdir -p "جراحی"
+          URL="https://sv3.admlink.ir/bot/dl/1564757/471703080/QB_جراحی_۱۴۰۴___جلد_اول__.pdf"
+          URL_ENC="https://sv3.admlink.ir/bot/dl/1564757/471703080/QB_%D8%AC%D8%B1%D8%A7%D8%AD%DB%8C_%DB%B1%DB%B4%DB%B0%DB%B4___%D8%AC%D9%84%D8%AF_%D8%A7%D9%88%D9%84__.pdf"
+          if curl -L -k -A "Mozilla/5.0" --retry 3 -o "جراحی/QB_جراحی_۱۴۰۴___جلد_اول__.pdf" "$URL"; then
+            echo "✅ Downloaded via URL 1"
+          else
+            curl -L -k -A "Mozilla/5.0" --retry 3 -o "جراحی/QB_جراحی_۱۴۰۴___جلد_اول__.pdf" "$URL_ENC"
+          fi
+          ls -lh "جراحی/"
+          file "جراحی/QB_جراحی_۱۴۰۴___جلد_اول__.pdf"
+
+      - name: Commit and push PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SIZE=$(stat -c%s "جراحی/QB_جراحی_۱۴۰۴___جلد_اول__.pdf")
+          if [ "$SIZE" -gt 104857600 ]; then
+            git lfs install
+            git lfs track "جراحی/*.pdf"
+            git add .gitattributes
+          fi
+          git add "جراحی/QB_جراحی_۱۴۰۴___جلد_اول__.pdf"
+          git commit -m "📚 افزودن فایل PDF QB جراحی ۱۴۰۴ جلد اول" || echo "Nothing to commit"
+          git push origin HEAD:arena/01a088aa-book
